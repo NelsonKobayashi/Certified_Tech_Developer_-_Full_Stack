@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Exercicio - Aula 08</title>
+</head>
+<body onpageshow="alert('Sua página foi carregada!')">
+        <form action="">
+            <label for="text" onkeypress="pressEnter()">Digite um texto e aperte o Enter</label>
+            <input type="text">
+            <br><br>
+            <button type="submit" id="btn1">Enviar</button>
+            <button type="reset">Resetar</button>
+        </form>
+    
+        <p onmouseover="mudarCor(this, '#fff', '#000' )" onmouseout="mudarCor(this, '#000','#fff')">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur corrupti dolorem, odio incidunt molestiae voluptatibus quos culpa cum enim earum dignissimos voluptates optio cupiditate quod alias numquam officia amet ex.</p>
+        
+        <input type="text" id="field" placeholder="Type here">
+        <p id="status"></p>
+  
+    <script src="./js/app.js"></script>
+</body>
+  
+</html>

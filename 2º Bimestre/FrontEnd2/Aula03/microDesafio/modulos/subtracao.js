@@ -1,0 +1,1 @@
+module.exports.subtracao = (a,b) => a - b;

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  
+<body style="text-align:center;">
+    <body onpageshow="alert('Sua página foi carregada!')">
+        <form action="">
+            <label for="text" onkeypress="pressEnter()">Digite um texto e aperte o Enter</label>
+            <input type="text">
+            <br><br>
+            <button type="submit" id="btn1">Enviar</button>
+            <button type="reset">Resetar</button>
+        </form>
+    
+        <p onmouseover="mudarCor(this, '#fff', '#000' )" onmouseout="mudarCor(this, '#000','#fff')">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur corrupti dolorem, odio incidunt molestiae voluptatibus quos culpa cum enim earum dignissimos voluptates optio cupiditate quod alias numquam officia amet ex.</p>
+     
+    
+        <input type="text" id="field" placeholder="Type here">
+        <p id="status"></p>
+      
+  
+    <script>
+        // Script to test which key 
+        // event gets triggered 
+        // when a key is pressed
+        var key_pressed =
+            document.getElementById('field');
+  
+        key_pressed
+            .addEventListener("keydown", onKeyDown);
+        key_pressed
+            .addEventListener("keypress", onKeyPress);
+        key_pressed
+            .addEventListener("keyup", onKeyUp);
+  
+        function onKeyDown(event) {
+            document.getElementById("status")
+                .innerHTML = 'keydown: '
+                + event.key + '<br>'
+        }
+        function onKeyPress(event) {
+            document.getElementById("status")
+                .innerHTML += 'keypress: '
+                + event.key + '<br>'
+        }
+        function onKeyUp(event) {
+            document.getElementById("status")
+                .innerHTML += 'keyup: '
+                + event.key + '<br>'
+        }
+    </script>
+</body>
+  
+</html>

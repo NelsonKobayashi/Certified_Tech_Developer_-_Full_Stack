@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesa 06</title>
+</head>
+
+<!-- 
+  Giovani Silva
+  Carlindo
+  Guilherme Procópio
+  Luiz Gustavo Trindade
+  Reginaldo Guimarães -->
+
+<body>
+    
+
+    
+
+    <script>
+    //Crie um formulário com campos de input e botões de submit e reset.
+        const body = document.querySelector('body');
+
+        body.innerHTML = `
+        <form action="">
+        <input id="meuInput" type="text">
+        <button class="btnSub"type="submit">Enviar</button>
+        <button type="reset" >Cancelar</button>
+        </form>
+        <p onmouseover="mudarCor(this, 'red')" onmouseout="mudarCor(this, 'blue')">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab sunt optio voluptatum, eum quidem dolorum nulla adipisci provident nemo, repellendus, repudiandae commodi. Impedit asperiores, in possimus eaque eveniet aut reiciendis?</p>
+        <p id="par1"></p>
+        <p id="par2"></p>
+        `
+    
+    //Previna a página de ser recarregada quando houver o submit utilizando preventDefault().
+        const btnSubmit = document.querySelector('.btnSub')
+        btnSubmit.addEventListener('click', evento => {
+        evento.preventDefault();        
+        })
+
+    //Mostre um alerta na página quando a tela terminar de ser carregada.
+        window.onload= function () {
+            alert('Pagina carregada!');
+        }
+    //Adicione uma cor a um texto quando o mouse ficar acima do mesmo e outra cor quando ele sair do mesmo.
+        function mudarCor(objDiv, cor) {
+            objDiv.style.color = cor;
+        }
+    //Faça um trecho de código que utilize algum evento de teclado, esse evento
+    // irá escrever o conteúdo do input em uma tag p e logo abaixo o número de 
+    //vezes que esse evento foi chamado. Exemplo: <p>futebol</p> <p>7</p> .
+        let input = document.querySelector('#meuInput');
+        let par1 = document.querySelector('#par1');
+        let par2 = document.querySelector('#par2');
+        let vezes =0; 
+        
+       /*  input.onkeypress = function(event){
+            
+            par1.textContent = event.target.value;
+            vezes++;
+            par2.textContent = vezes;    
+        } */
+        input.addEventListener("keypress", (e) => {
+            par1.innerHTML = e.target.value;
+            vezes.innerHTML = keyStroke++;
+        })
+
+
+    </script>
+
+</body>
+</html>

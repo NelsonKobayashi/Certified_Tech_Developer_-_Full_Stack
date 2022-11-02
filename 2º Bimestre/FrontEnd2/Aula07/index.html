@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula07 - Mesa De Trabalho Formulário</title>
+</head>
+<body>
+    <!-- 1. Crie um formulário
+    2. Selecione o formulário e salve-o numa variável com querySelector.
+    Itens a seguir serão inseridos dentro do formulário:
+    3. Um título com o texto: “Login”.
+    4. Um campo de input text com um placeholder: “Email”.
+    5. Um campo de input password com um placeholder: “Senha”.
+    6. Um botão submit com o texto “Enviar”.
+    7. Um botão reset com o texto “Cancelar”.
+    8. Insira a propriedade disabled no campo de Email.
+    9. Insira um estilo da sua escolha, a sugestão seria o display flex com flex-direction
+    column.
+    10. Remova o atributo placeholder do email. -->
+
+    <!-- Mariana, Nelson, Pedro Marchi, Ruan, Octavio -->
+
+    <script>
+        var login = document.createElement("h1");
+        login.textContent = "Login:";
+        document.body.appendChild(login);
+
+        
+        var formulario = document.createElement("form");
+        document.body.appendChild(formulario)
+        formulario.innerHTML = `<label for="email" id="email">Email</label>
+                                <input type="email" name="email" class="email" placeholder="Insira seu Email">
+                                <br>
+                                <label for="password" id="password">Senha</label>
+                                <input type="password" name="password" class="password" placeholder="Senha">
+                                <br>
+                                <button type="submit">Enviar</button>
+                                <button type="reset">Cancelar</button>
+        `;
+        
+        let email = document.querySelector(".email")
+        email.removeAttribute("placeholder");
+        email.setAttribute("disabled", "disabled");
+        
+
+        
+
+    </script>
+    
+</body>
+</html>
