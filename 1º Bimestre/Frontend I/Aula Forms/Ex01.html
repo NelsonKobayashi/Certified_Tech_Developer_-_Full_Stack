@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <!--Iniciando a tag form: Formula´rios-->
+    <form method="post" action="/registro">
+        <!-- Text -> caixa de texto-->
+        <label for="nome">Nome (*):</label><br>
+        <input type="text" name="nome" id="nome" placeholder="Digite seu Nome"><br>  
+        <!-- Email -> caixa de texto para inserção de email com verificação pelo próprio html-->
+        <label for="email">E-mail (*):</label><br>
+        <input type="email" name="email" id="email" placeholder="email@email.com"><br>
+        <br>
+        <!-- Password -> caixa de texto para inserção de senha -->
+        <label for="senha">Senha:</label><br>
+        <input type="password" name="senha" id="senha" placeholder="Digite sua Senha"><br>
+        <br>
+        <!-- Submit -> Botão de Envio/ de informações  -->
+        <input type="submit" value="Enviar">
+        <!-- Reset -> Botão que apaga todas informações colocadas -->
+        <input type="reset" value="Cancelar"><br>
+        <br>
+        <!-- Button: Submit ->  Botão de Envio/ de informações -->
+        <button type="submit">Enviar</button>
+        <!-- Button: Reset -> Botão que apaga todas informações colocadas -->
+        <button type="reset">Cancelar</button><br>
+        <br>
+        <h3>Forma de Pagamento:</h3>
+        <!-- Radio -> permite seleção de apenas um item, devem ter o mesmo "name" para ser tipo única escolha. -->
+        <input type="radio" name="meio-de-pagamento" id="Boleto" value="Boleto">
+        <label for="Boleto">Boleto</label><br>
+        <input type="radio" name="meio-de-pagamento" id="Debito" value="Debito">
+        <label for="Debito">Débito</label><br>
+        <input type="radio" name="meio-de-pagamento" id="Credito" value="Credito">
+        <label for="Credito">Crédito</label><br>
+        <input type="radio" name="meio-de-pagamento" id="Pix" value="Pix"> 
+        <label for="Pix">Pix</label><br>
+        <br>
+
+        <h3>Hobbies</h3>
+        <!-- Checkbox -> permite seleção de um ou mais itens -->
+        <input type="checkbox" name="hobbies" id="Musica" value="Musica">
+        <label for="Musica">Música</label><br>
+        <input type="checkbox" name="hobbies" id="Esportes" value="Esportes">
+        <label for="Esportes">Esportes</label><br>
+        <input type="checkbox" name="hobbies" id="Cinema" value="Cinema">
+        <label for="Cinema">Cinema</label><br>
+        <input type="checkbox" name="hobbies" id="Viagens" value="Viagens">
+        <label for="Viangens">Viagens</label><br>
+        <br>
+
+        <!-- Date -> Campo de preenchimento de data -->
+        <label for="data">Data: </label><br>
+        <input type="date" name="data" id="data"><br>
+        <br>
+
+        <h3>Mensagem: </h3> 
+        <label for="Assunto">Assunto:* </label>
+        <input type="text" name="Assunto" id="Assunto" value="Assunto/Título"><br>
+        <br>
+        <!-- Textarea -> Tag de mensagem (deve-se fechar essa TAG) -->
+        <label for="Mensagem">Mensagem: </label>
+        <textarea id="msg"></textarea><br>
+        <br>
+        <!-- Fieldset -> Agrupa elementos de formulários associados. -->
+        <fieldset>
+        <!-- Legend -> Adiciona um legenda ao fieldset -->    
+            <legend>Tipo de Equipamento</legend>
+            <input id="pc" type="radio" name="rb3" value="radiobutton">
+            <label for="pc">PC</label><br>
+            <input id="linux" type="radio" name="rb3" value="radiobutton">
+            <label for="linux">Linux</label><br>
+        </fieldset>
+        <br>
+
+        <!-- Select -> Caixinha com lista de opções de escolha -->    
+        <p>Escolha um carro:
+        <select>
+        <!-- Agrupa opções de selecionamento de uma lista-->    
+        <!-- Label é obrigatória nesse elemento para dar dica da descrição do conteúdo-->
+            <optgroup label="Ferrari">
+                <option>458 Spider</option>
+                <option>F12 Berlinetta</option>
+                <option>Califórnia T</option>
+            </optgroup>
+            <optgroup label="Porsche">
+                <option>Macan</option>
+                <option>918 Spyder</option>
+                <option>911 Carrera</option>
+            </optgroup>
+        </select>
+        </p><br>
+
+
+
+
+
+
+    </form>
+</body>
+</html>

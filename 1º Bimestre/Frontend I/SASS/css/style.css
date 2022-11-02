@@ -1,0 +1,9 @@
+.error, .error--serious {
+  border: 1px #f00;
+  background-color: #fdd;
+}
+
+.error--serious {
+  border-width: 20px;
+}
+/*# sourceMappingURL=style.css.map */

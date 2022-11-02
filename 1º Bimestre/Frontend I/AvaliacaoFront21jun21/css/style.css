@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* resetando as configurações dos browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/*
+
+NÃO CONSEGUIMOS ESPAÇAR A IMAGEM DO MENU INICIAL
+
+*/
+
+
+header{
+    position: fixed; /*para fixar o menu na tela*/
+    width: 100%; /*ocupando 100% da tela*/
+    background-color: rgb(63,89,121);
+    z-index: 10;
+}
+
+body{
+    background-color: rgb(92, 155, 236);
+}
+
+.menu-superior{
+    text-align: center; /*centralizando os itens do menu da nav*/
+    padding: 30px; /*alterando a altura dos botões*/
+}
+
+nav a {
+    padding: 14px 30px; /*espaçamento dos botões*/
+    border: solid 1px #fff; /*coloração da borda dos botões*/
+    text-decoration: none; /*retirando o sublinhado dos botões*/
+    text-align: center; /*centralizando os textos dentro dos botões*/
+    color: #fff; /*cor das letras dos botões*/
+    font-size: 20px; /*tamanho da fonte dentro do botão*/
+    font-style: bold; /*altera o largura da fonte*/
+    margin-inline: 10px; /*espaçamento entre os botões*/ 
+    border-radius: 15px;
+}
+
+nav a:hover {
+    background-color: rgb(255, 145, 0); /*muda a cor do botão ao passar o mouse por cima*/
+    color:#fff; /*muda a cor da letra do botão ao passar o mouse por cima*/
+}
+
+main {
+    text-align: center; /*centralizando os itens da main*/
+    /*background-color: rgb(92, 155, 236); definindo cor de fundo da main -> Pedro: passei esse trem pro body pq tinha ficado um pedaço branco no fundo*/
+    margin-bottom: 40px;
+}
+
+.imagem-principal img{
+    width: 100%; /*diminuindo a imagem para ocupar 70% -> Pedro: mudei p 100 pq acho q no projeto pede especificamente 100, caso eu esteja errado peço desculpas e pode voltar pro 70 q tava melhor*/
+    padding-bottom: 15px;
+    position: relative; /*position relative para poder posicionar imagem e distanciar do menu*/
+    margin-top: 80px;  /*distância da imagem pro topo*/  
+}
+
+#container{
+    display: flex; /*torna os itens responsivos*/
+    justify-content: center; /*espaçamento entre e ao redor dos itens*/
+    flex-direction: column; /* organiza os itens no eixo principal*/
+    align-items: center; /*alinha os itens ao centro*/
+    text-align: center; /*alinha os textos ao centro*/
+    position: relative; /*fixar bloco e poder distanciar da imagem*/
+}
+.cardBox{
+    display: grid; /* transforma o display em uma grade*/
+    grid-template-columns: repeat(3,1fr); /*divide os itens na grade de 3 em 3*/
+    gap: 10px;/* espaçamento entre os itens dentro da grade*/
+    margin: 20px; /*espacinho nas borda*/
+    background-color: rgb(92, 155, 236); /*cor de fundo do cardBox*/
+    padding: 10px; /*espaçamento interno do cardBox*/
+}
+
+h2{
+    padding: 10px; /*espaçamento interno dos nomes dos produtos*/
+}
+
+.produto img {
+    width: 300px; /*redimensionando as imagens dos itens em 350px de largura*/
+}
+
+.produto {
+    position: relative;/*posição relativa para deixar botão absoluto*/
+    border: solid 1px; /*contorno da caixa de cada produto*/
+    border-radius: 15px; /*adicionando arredondamento da borda*/
+    background-color: #fff; /*definindo cor de fundo da caixa*/
+    padding-bottom: 65px; /*espaçamento inferior da caixa com ajuste para o botão*/
+}
+
+.produto h3{
+    padding: 10px 40px 20px; /*espaçamento do interno do texto da descrição*/
+}
+div .descricao{
+    width: 100%; /*descrição ocupa 100% da div direcionada a ela */
+}
+
+div .descricao h3{
+    font-size: 16px; /*altera o tamanho dos textos que estejam nas tags h3 -> descrição dos produtos*/
+}
+
+.produto a {
+    position: absolute; /*posição absoluta para deixar botões abaixo*/
+    bottom: 1%; /*espaçamento abaixo para o bloco produto*/
+    left: 50%; /*Manter o botão centralizado*/
+    transform: translateX(-50%); /*Ajuste para manter o botão centralizado*/
+}
+
+button {
+    padding: 20px 25px; /*espaçamento dos botões*/
+    text-decoration: none; /*retirando o sublinhado dos botões*/
+    text-align: center; /*centralizando os textos dentro dos botões*/
+    color:  #fff;/*cor das letras dos botões*/
+    background-color: rgb(63,89,121);
+    font-size: 17px; /*tamanho da fonte dentro do botão*/
+    border-radius: 15px; /*leve arredondamento dos botões que direcionam aos produtos*/
+}
+
+button:hover {
+    background-color: rgb(255, 145, 0); /*muda a cor do botão ao passar o mouse por cima*/
+}
+
+div.icone-amazon a img{
+    max-width: 130px;
+    max-height: 130px;
+    padding-bottom: 10px ;
+    position: fixed; /* Esse comando deixa a div solta e  fora da sua área padrão */
+    right: 20px; /* Esse comando leva a div para a direita */
+    bottom: 10px;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+footer {
+    width: 100%;  /*Ocupar 100% da tela*/
+    padding: 35px; /*tamanho do bloco*/
+    text-align: center;
+    background-color: rgb(44, 52, 63); 
+    color: #fff;
+    position: relative; /*adicionar position relative pra distanciar do bloco de cima*/
+    margin-top: 20px; /*distância pro bloco de cima*/
+}

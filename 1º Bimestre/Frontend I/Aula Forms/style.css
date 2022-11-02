@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;             
+}
+
+body{
+    background-color: rgb(63, 61, 61);
+    color:aliceblue;
+    padding: 20px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+/*Estilização do checkbox*/
+.checkbox-item{
+    margin-bottom: 15px;
+}
+
+.checkbox {
+    display: none; /*esconde a caixinha da seleção para podermos estilizar */
+
+}
+
+.checkbox-label {
+    cursor: pointer; /*muda o mouse para mãozinha*/
+    display: inline;
+}
+
+/*criando caixinha de seleção personalizada*/
+.checkbox-label::before{ /*escreve antes do conteúdo da label*/
+    border: solid 2px aqua;
+    border-radius: 5px;
+    content:''; /* escreve antes do texto da tag, como não queremos nada, deixamos vazio. */
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-color: #0b1e23;
+    float: left; /* alinha os itens na mesma lina, jogando tudo à esquerda*/
+    margin-right: 10px; /* espaçamento entre a caixinha e o texto. */
+
+}
+
+/*faz nossa caixinha criada ficar marcada*/
+.checkbox:checked + .checkbox-label::before {/*seleciona nossa caixinha criada, utilizando dois elementos*/
+    background-color: aqua;
+}
+
+.radio-item{
+    margin-bottom: 15px;
+}
+.radio {
+    display: none; /*esconde a caixinha da seleção para podermos estilizar */
+
+}
+
+.radio-label {
+    cursor: pointer; /*muda o mouse para mãozinha*/
+    display: inline;
+}
+
+/*criando caixinha de seleção personalizada*/
+.radio-label::before{ /*escreve antes do conteúdo da label*/
+    border: solid 2px aqua;
+    border-radius: 5px;
+    content:''; /* escreve antes do texto da tag, como não queremos nada, deixamos vazio. */
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-color: #0b1e23;
+    float: left; /* alinha os itens na mesma lina, jogando tudo à esquerda*/
+    margin-right: 10px; /* espaçamento entre a caixinha e o texto. */
+
+}
+
+/*faz nossa caixinha criada ficar marcada*/
+.radio:checked + .radio-label::before {/*seleciona nossa caixinha criada, utilizando dois elementos*/
+    background-color: aqua;
+}
+
+
+/*Mudando a cor do botão e a transição dessa mudança*/
+button {
+    display: flex;
+    border: solid 2px aqua;
+    border-radius: 5px;
+    content:''; /* escreve antes do texto da tag, como não queremos nada, deixamos vazio. */
+    width: 60px;
+    height: 40px;
+    display: block;
+    background-color: #0b1e23;
+    float: left; /* alinha os itens na mesma lina, jogando tudo à esquerda*/
+    margin-right: 10px; /* espaçamento entre a caixinha e o texto. */
+    color: #FFFFFF;
+    transition-property: background-color, color; /*define quais propriedades do CSS que sofrerá alteração*/
+    transition-duration: 0.5s; /*estabelece o tempo que essa mudança vai ocorrer*/
+    align-items: flex-end;
+}
+button:hover {
+    background-color: aqua;
+    color: #000;
+}
+
