@@ -1,0 +1,18 @@
+/* ===================================== 
+   Grid Layout
+======================================== */
+
+.grid {
+   max-width: 800px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 
+                           /* repeat(12, 50px) */ 
+                           /* 200px auto 200px */ 
+                           /* 33.33% 33.33% 33.33% */ ;
+   grid-template-rows: 100px 100px 100px 150px 50px 200px 70px 100px;
+   column-gap: 10px; /* espaçamento entre colunas */
+   row-gap: 20px; /* espaçamento entre  linha */
+   /* gap: 20px 10px; --> é a mesma coisa das duas linhas acima */
+
+}
+

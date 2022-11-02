@@ -1,0 +1,38 @@
+
+h1:hover {
+    color: white;
+}
+
+
+input[type='text']:hover, 
+     [type='email']:hover,
+     [type='password']:hover {
+        background-color: rgb(92, 92, 92);
+        border-radius: 5px;
+}
+
+
+
+/*altera a cor da caixa de preenchimento do formulário*/
+.place:hover {
+    width: 100%;
+    height: 100%;
+    animation: pulse 1s infinite;
+  }
+
+/*troca de cor dos botões*/
+button.btn:hover {
+    background-color: white;
+    color: rgb(4, 180, 28);
+    font-weight: bold;
+}
+/*animação dos botões - giro*/
+.btn:hover {
+    transform: rotateY(360deg) translateZ(50px);
+}
+
+button:hover {
+	transform: opacity(0);
+}
+
+

@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.intro{
+    font-size:50px; /* com esse tamanho de fonte, de acordo com browser o tamanho do h1 será 2em*/
+}
+h1{
+    font-size: 3em; /* 3 vezes maior que o pai */
+}
+.lista-compras {
+    font-size:50px;
+}
+ul {
+    font-size:0.5em; /* tamanho relativo ao pai -> lista-compras : 50px X 0.5 = 25px */
+}
+li{
+    font-size:1.5em; /* tamanho relativo ao pai -> ul: 25px x 1.5 = 37,5px */
+}
+

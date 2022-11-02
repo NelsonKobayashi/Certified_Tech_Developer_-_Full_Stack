@@ -1,0 +1,32 @@
+.grid {
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 150px 300px 150px;
+    /* place-items: center; /* align itens +  justufy-items*/ 
+    align-items: center;
+    text-align: center;
+}
+
+/* .grid * {
+    text-align: center;
+} --> seletor para todos os filhos do grid */
+
+header {
+    grid-column-start: 1;
+    grid-column-end:13;
+    /* grid-column: 1 / 13;  as duas linhas anteriores pode ser assim*/
+    background-color: aqua;
+}   
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1 / 13;
+    
+}
+
+footer {
+    display: grid;
+    grid-column: 1 / 13;
+}
