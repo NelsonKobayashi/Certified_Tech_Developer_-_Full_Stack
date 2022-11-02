@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+body {
+    background-color: #0b1e23;
+    width: 600px;
+    margin: 0 auto;
+    color: rgb(138, 109, 241);
+}
+
+h2 {
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Estilizaçao do Checkbox */
+.exemplo-checkbox {
+    float: left;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox-item {
+    clear: both;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.checkbox-label {
+    display: inline;
+    font-size: 26px;
+    cursor: pointer;
+    float: left;
+}
+
+.checkbox-label::before {
+    content: '';
+    display: block;
+    float: left;
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    border: 2px solid rgb(138, 109, 241);
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.checkbox:checked + .checkbox-label::before {
+    background-color: #4de4cf;
+    border: 5px solid rgb(138, 109, 241);
+}
+
+/* Estilizaçao do Radio */
+.radio {
+    display: none;
+}
+
+.radio-item {
+    clear: both;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.radio-label {
+    display: inline;
+    font-size: 26px;
+    cursor: pointer;
+    float: left;
+}
+
+.radio-label::before { /* Cria uma caixa que vai substituir o chechbox */
+    content: '';
+    display: block;
+    float: left;
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    border: 2px solid rgb(138, 109, 241);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.radio:checked + .radio-label::before { /* Muda propriedades da caixa quando o radio estiver selecionado */
+    background-color: #4de4cf;
+    border: 5px solid rgb(138, 109, 241);
+}
+
+button {
+    appearance: none;
+    float: right;
+    margin-top: 30px;
+    width: 280px;
+    height: 55px;
+    border-radius: inherit;
+    background-color: #4de4cf;
+    border-radius: 55px;
+    font-size: 30px;
+    color: #0b1e23;
+    font-weight: bold;
+}
+
+div.img:hover{
+    transform: scale(2);
+}

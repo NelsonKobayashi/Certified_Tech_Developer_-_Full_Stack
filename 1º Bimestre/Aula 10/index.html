@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="exemplo-checkbox">
+        <h2>Quais pestes estão presentes no local? </h2>
+        <p>(Marque vários se houver)</p>
+        <div class="checkbox-item">
+            <input type="checkbox" id="baratas" name="baratas"  class="checkbox">
+            <label for="baratas" class="checkbox-label">
+                <span>Baratas</span> 
+            </label>
+        </div>
+        <div class="checkbox-item">
+            <input type="checkbox" id="ratos" name="ratos" class="checkbox">
+            <label for="ratos" class="checkbox-label">
+                Ratos
+            </label>
+        </div>
+        <div class="checkbox-item">
+            <input type="checkbox" id="formigas" name="formigas" class="checkbox">
+            <label for="formigas" class="checkbox-label">
+                Formigas
+            </label>
+        </div>
+    </section>
+    <br class="clear">
+    <section class="exemplo-radio">
+        <h2>Selecione uma opção de serviço de Dedetização</h2>
+        <p>(Escolha um)</p>
+        <div class="radio-item"> <!-- Para funcionar selecionando só uma opção é necessário que o atributo name seja igual entre as opções -->
+            <input type="radio" id="prevencao" name="tipo-dedetizacao" value="prevencao" class="radio" unchecked>
+            <label for="prevencao" class="radio-label">Prevenção</label>
+        </div>
+        <div class="radio-item">
+            <input type="radio" id="remocao" name="tipo-dedetizacao" value="remocao" class="radio" unchecked>
+            <label for="remocao" class="radio-label">Remoção</label>
+        </div>
+    </section>
+    <br class="clear">
+    <button>Enviar</button>
+
+    <div class="img">
+        <img src="./sai.png" alt="imagem saitama">
+    </div>
+    
+</body>
+</html>

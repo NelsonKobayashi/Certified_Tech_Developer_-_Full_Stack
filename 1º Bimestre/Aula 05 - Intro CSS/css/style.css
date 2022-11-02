@@ -1,0 +1,22 @@
+#titulo-principal{
+    background-color: greenyellow;
+    font-weight:normal;
+
+}
+
+.subtitulo {
+    border: 1px;
+    border: crimson;
+    
+
+}
+
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+    background-color: gray;
+    font-size: 16px;
+    opacity: 0.5; 
+    box-shadow: 5px 10px;
+}
+

@@ -1,0 +1,22 @@
+.slide-form{
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+/* animação do slidein */
+@keyframes slidein{
+    from{ /* de onde vem */
+        margin-top: -100%;
+    }
+    to{ /* para onde vai */
+        margin-top: 1%;
+    }
+}
+
+/*animação dos botões*/
+.btn {
+    border-style: solid;
+    border-width: 1px;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
