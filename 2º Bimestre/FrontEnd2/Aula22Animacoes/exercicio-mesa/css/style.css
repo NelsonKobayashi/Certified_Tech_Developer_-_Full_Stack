@@ -1,0 +1,50 @@
+
+
+.container {
+    display: flex;
+}
+
+.esquerda {
+    width: 30%;
+    flex-direction: column;
+}
+
+label{
+    font-size: 2rem;
+    margin: 10px 0 10px 0; 
+}
+
+input {
+    width: 95%;
+    margin: 5px;
+    padding: 5px;
+    margin-bottom: 70px;
+}
+
+.direita {
+    width: 70%
+}
+
+img {
+    width: 200px;
+}
+
+p {
+    font-size: 3rem;
+}
+
+.bg_video {
+    position: fixed; 
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    z-index: -1000;
+    background: url('https://media1.giphy.com/media/t4DcI9P3dNVoA/giphy.gif') no-repeat;
+    background-size: cover; 
+    opacity: 50%;
+}
+
+    

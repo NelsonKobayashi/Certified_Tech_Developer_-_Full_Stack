@@ -1,0 +1,78 @@
+/* zerando o browser */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    text-align: center;/* alinhando os itens do body ao centro */   
+    background-color: rgb(37, 41, 41); /* alternado a cor de fundo do body */
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+}
+
+.formulario{
+    display: inline-block;
+    background-color: rgb(20, 64, 94);
+    color: white;
+    padding: 3rem;
+    margin: 10px;
+    border-radius: 5px 25px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    border: 1px solid #fff;
+}
+
+.form{
+    padding: 1.5rem;
+    font-size: 1.3rem;
+    
+}
+
+.cx-formulario{
+    padding: 0.5rem;
+    
+}
+
+input{
+    padding: 0.5rem;
+    border-radius: 5px 10px;
+    border: 2px solid #fff;
+}
+
+button{
+    width: 30%;
+    height: 30px;
+    color: white;
+    background-color: rgba(0, 102, 255, 0.726);
+    border-radius: 5px 10px;
+    border: 2px solid #fff;
+}
+
+div #cards {
+    display: grid;
+    grid-template-columns: repeat(5,1fr); 
+    gap: 15px;
+}
+
+div .card {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+img {
+    max-height: 200px;
+    border-radius: 10px 10px 0 0;
+}
+
+p{
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
