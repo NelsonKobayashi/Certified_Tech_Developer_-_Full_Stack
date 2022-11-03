@@ -1,0 +1,32 @@
+.banner{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    animation-name: cores;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes cores {
+    0% {background: #ff0000 ;}
+    15% {background: #ff8700 ;}
+    30% {background: #fbff00 ;}
+    45% {background: #1fb310 ;}
+    60% {background: #02d4e6 ;}
+    75% {background: #0209e6 ;}
+    90% {background: #6200ff ;}
+    100% {background: #ff0000 ;}
+
+}
+
+button {
+    height: 30px;
+    margin: 35px 0px 35px 0px;
+    border-radius: 5px;
+}
+
+p {
+    font-size: 25px;
+    color: white;
+}
