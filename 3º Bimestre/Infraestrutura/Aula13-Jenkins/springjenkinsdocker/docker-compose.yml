@@ -1,0 +1,26 @@
+version: '3'
+services:
+  proxy:
+    image: nelsonkobayashi/springjenkinsdocker
+    container_name: filosofopaulaum
+    build:
+      context: .
+    ports:
+      - "1234:8080"
+    networks:
+      - narnia
+
+  qualquernome:
+    image: "nginx"
+    ports:
+      - "5678:8080"
+    networks:
+      - narnia
+    depends_on:
+      - proxy
+
+networks:
+  narnia:
+    driver: bridge
+
+    # docker-compose up -d
