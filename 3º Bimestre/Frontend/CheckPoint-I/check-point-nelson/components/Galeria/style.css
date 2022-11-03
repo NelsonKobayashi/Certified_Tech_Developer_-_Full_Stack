@@ -1,0 +1,34 @@
+#galeria{
+    margin: 250px;
+    background: transparent;
+}
+
+#galeria h3 {
+    text-align: center;
+    color: white;
+    margin-bottom: 50px; 
+}
+
+#galeria .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 20px;
+    text-align: center;
+    margin: auto;
+     
+}
+
+div .grid {
+    align-items: center;
+    align-content: center;
+    justify-content: center;   
+}
+
+/* #galeria .grid:first-child {
+    margin-left: 200px;
+}  */
+
+img {
+    width: 100%;
+    border-radius: 15px;
+}

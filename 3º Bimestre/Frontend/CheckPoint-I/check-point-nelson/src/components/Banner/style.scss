@@ -1,0 +1,31 @@
+#banner {
+    /* display: grid; */
+    grid-template-columns: 33% 33% 33%; 
+    width: 100%;
+    height: calc(100vh - 230px);
+    background-size: cover;
+    background-attachment: fixed;
+    
+    
+}
+
+#banner .banner-text{
+    
+    color: white;
+    text-shadow: 5px 5px 5px #222222;
+    text-align: center;
+    width: 100%;
+}
+
+#banner .banner-text h2{
+    font-size: 50px;
+}
+
+#banner .banner-text p{
+    font-size: 20px;
+}
+
+.img-dev {
+    width: 300px;
+    margin: 0 0 0 180px;
+}

@@ -1,0 +1,41 @@
+.App {
+  text-align: center;
+}
+
+
+h3 {
+  color:white;
+  text-align: center;
+}
+
+.icones {
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.contatos {
+  display: flex;
+  justify-content: center;
+  margin-top: 300px;
+  background-color: #0f0f0f ;
+}
+
+
+@media (max-width: 1360px)
+{
+    .img-dev{
+      display:none;
+    }
+
+    #banner{
+      display: flex !important; 
+      justify-content: center;
+    }  
+
+    .banner-text{
+      width: 500px !important;      
+      
+      text-align: center;
+    }
+}

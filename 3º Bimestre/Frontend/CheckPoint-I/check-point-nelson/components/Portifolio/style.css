@@ -1,0 +1,11 @@
+a{
+  color: white;
+  justify-content: center;
+  width: 242.5px;
+  text-decoration: none;
+}
+
+a:hover{
+  color: rgb(255, 102, 0);  
+}
+

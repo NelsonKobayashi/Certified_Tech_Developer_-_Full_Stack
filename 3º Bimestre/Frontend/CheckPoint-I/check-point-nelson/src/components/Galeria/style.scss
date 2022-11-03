@@ -1,0 +1,78 @@
+#root{
+
+    #projetinhos{
+        padding-top: 150px;
+        h3{
+        text-align: center;
+        color: white;
+        margin-bottom: 50px; 
+        }
+    
+        #grid{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px,300px));
+        gap: 20px;
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+    
+        .galeria  {
+            
+            text-align: center;
+            
+            a{
+                img {
+                width: 100%;
+                border-radius: 15px;
+                height: 200px;
+                }
+            }
+        }
+    }
+
+        
+       
+
+    }
+
+}
+
+
+
+
+
+
+/* #grid{
+    margin: 250px;
+    background: transparent;
+
+    h3 {
+    text-align: center;
+    color: white;
+    margin-bottom: 50px; 
+    }
+
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,3fr));
+       
+    gap: 20px;
+    text-align: center;
+    margin: auto;
+     
+    
+}
+
+.galeria img {
+    width: 33%;
+    border-radius: 15px;
+    }
+
+/* div .grid {
+    align-items: center;
+    align-content: center;
+    justify-content: center;   
+} */
+ 
+
+
