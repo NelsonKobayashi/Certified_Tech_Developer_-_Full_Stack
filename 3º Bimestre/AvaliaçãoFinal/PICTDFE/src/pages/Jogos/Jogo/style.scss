@@ -1,0 +1,99 @@
+@import "../../../root.scss";
+
+.content {
+    min-height: calc(100vh - 193px - 40px - 76px);
+    .jogo-completo {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding: 0 1rem;
+
+        .jogo-info {
+            display: flex;
+            flex-direction: column;
+
+            .linha {
+                height: 1px;
+                background-color: $destaque;
+            }
+        }
+    }
+}
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Small tablets and large smartphones (landscape view)
+@media (min-width: $screen-sm-min) {
+    .content {
+        min-height: calc(100vh - 220.5px - 40px - 76px);
+        .jogo-completo {
+            .jogo-imagem {
+                text-align: center;
+                img {
+                    width: calc($screen-sm-min - 17px - 3rem * 2) !important;
+                }
+            }
+        }
+    }
+}
+
+// Small tablets (portrait view)
+@media (min-width: $screen-md-min) {
+    .content {
+        .jogo-completo {
+            .jogo-imagem {
+                img {
+                    width: 600px !important;
+                }
+            }
+        }
+    }
+}
+
+// Tablets and small desktops
+@media (min-width: $screen-lg-min) {
+    .content {
+        .jogo-completo {
+            flex-direction: row;
+            .jogo-imagem {
+                img {
+                    width: 500px !important;
+                }
+            }
+
+            .jogo-info {
+                button {
+                    justify-self: flex-end;
+                    align-self: flex-end;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $screen-xl-min) {
+    .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .jogo-completo {
+            width: calc($screen-xl-min - 50px);
+            .jogo-imagem {
+                img {
+                    width: 700px !important;
+                }
+            }
+        }
+    }
+}

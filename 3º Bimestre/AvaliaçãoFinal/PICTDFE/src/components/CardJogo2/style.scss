@@ -1,0 +1,25 @@
+@import "../../root.scss";
+
+.card2 {
+    display: block !important;
+    width: 80%;
+    background-color: $bg-color;
+
+    .card-body {
+        padding: 0 15px 0 15px !important;
+
+        .linha-carrossel {
+            height: 2px;
+            background-color: $destaque;
+            margin: 0 0 1rem;
+        }
+
+        p {
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+@import "../../root.scss";
+
+header {
+    #brand{
+        margin-left: 1rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.8rem;
+
+        img{
+            margin-right: 0.5rem;
+        }
+    }
+
+    a {
+        text-decoration: none !important;
+        color: $branco !important;
+    }
+    title {
+        color: $branco;
+    }
+
+    #basic-nav-dropdown {
+        color: $branco;
+    }
+
+    .dropdown-menu {
+        background-color: #212529 !important;
+        
+        .dropdown-item {
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.1) !important;
+            }
+        }
+    }
+
+    #nav-cart{
+        padding-right: 1rem;
+    }
+
+    #button-carrinho {
+        position: relative;
+        padding: 0 !important;
+
+        span {
+            color: black;
+            background-color: $destaque;
+        }
+    }
+}
