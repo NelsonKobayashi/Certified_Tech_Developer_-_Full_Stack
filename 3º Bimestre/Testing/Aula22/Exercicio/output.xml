@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.7 on win32)" generated="20210928 17:12:41.368" rpa="false" schemaversion="2">
+<suite id="s1" name="Ultimate" source="C:\Users\Cliente\Desktop\Testing\Aula21\Exercicio\Ultimate.robot">
+<test id="s1-t1" name="Teste 01">
+<kw name="Abrir o site ultimateqa" library="Ultimate" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210928 17:12:41.522" level="INFO">Opening browser 'chrome' to base url 'https://ultimateqa.com/simple-html-elements-for-automation/'.</msg>
+<status status="PASS" starttime="20210928 17:12:41.522" endtime="20210928 17:12:44.521"/>
+</kw>
+<status status="PASS" starttime="20210928 17:12:41.521" endtime="20210928 17:12:44.521"/>
+</kw>
+<kw name="Clicar no usando &quot;ID&quot;" library="Ultimate">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTAO1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210928 17:12:44.522" level="INFO">Clicking element 'id=idExample'.</msg>
+<status status="PASS" starttime="20210928 17:12:44.522" endtime="20210928 17:12:46.038"/>
+</kw>
+<status status="PASS" starttime="20210928 17:12:44.522" endtime="20210928 17:12:46.038"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210928 17:12:46.039" endtime="20210928 17:12:48.171"/>
+</kw>
+<status status="PASS" starttime="20210928 17:12:41.520" endtime="20210928 17:12:48.171"/>
+</test>
+<test id="s1-t2" name="Teste 02">
+<kw name="Abrir o site ultimateqa" library="Ultimate" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210928 17:12:48.173" level="INFO">Opening browser 'chrome' to base url 'https://ultimateqa.com/simple-html-elements-for-automation/'.</msg>
+<status status="PASS" starttime="20210928 17:12:48.173" endtime="20210928 17:12:51.189"/>
+</kw>
+<status status="PASS" starttime="20210928 17:12:48.172" endtime="20210928 17:12:51.189"/>
+</kw>
+<kw name="Clicar no botão usando &quot;ClassName&quot;" library="Ultimate">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTAO2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210928 17:12:51.190" level="INFO">Clicking element 'class=buttonClass'.</msg>
+<status status="PASS" starttime="20210928 17:12:51.190" endtime="20210928 17:12:52.688"/>
+</kw>
+<status status="PASS" starttime="20210928 17:12:51.190" endtime="20210928 17:12:52.688"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210928 17:12:52.689" endtime="20210928 17:12:54.802"/>
+</kw>
+<status status="PASS" starttime="20210928 17:12:48.172" endtime="20210928 17:12:54.803"/>
+</test>
+<test id="s1-t3" name="Teste 03">
+<kw name="Abrir o site ultimateqa" library="Ultimate" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210928 17:12:54.806" level="INFO">Opening browser 'chrome' to base url 'https://ultimateqa.com/simple-html-elements-for-automation/'.</msg>
+<status status="PASS" starttime="20210928 17:12:54.805" endtime="20210928 17:12:57.468"/>
+</kw>
+<status status="PASS" starttime="20210928 17:12:54.805" endtime="20210928 17:12:57.468"/>
+</kw>
+<kw name="Clicar no botão usando &quot;Name&quot;" library="Ultimate">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTAO3}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210928 17:12:57.469" level="INFO">Clicking element 'name=button1'.</msg>
+<status status="PASS" starttime="20210928 17:12:57.469" endtime="20210928 17:13:00.309"/>
+</kw>
+<status status="PASS" starttime="20210928 17:12:57.468" endtime="20210928 17:13:00.310"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210928 17:13:00.310" endtime="20210928 17:13:02.438"/>
+</kw>
+<status status="PASS" starttime="20210928 17:12:54.804" endtime="20210928 17:13:02.439"/>
+</test>
+<test id="s1-t4" name="Teste04">
+<kw name="Abrir o site ultimateqa" library="Ultimate" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210928 17:13:02.442" level="INFO">Opening browser 'chrome' to base url 'https://ultimateqa.com/simple-html-elements-for-automation/'.</msg>
+<status status="PASS" starttime="20210928 17:13:02.442" endtime="20210928 17:13:05.088"/>
+</kw>
+<status status="PASS" starttime="20210928 17:13:02.441" endtime="20210928 17:13:05.088"/>
+</kw>
+<kw name="Clicar no botão usando &quot;LinkText&quot;" library="Ultimate">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${BOTAO4}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20210928 17:13:05.089" level="INFO">Clicking link 'Click me using this link text!'.</msg>
+<status status="PASS" starttime="20210928 17:13:05.088" endtime="20210928 17:13:06.338"/>
+</kw>
+<status status="PASS" starttime="20210928 17:13:05.088" endtime="20210928 17:13:06.339"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210928 17:13:06.340" endtime="20210928 17:13:08.500"/>
+</kw>
+<status status="PASS" starttime="20210928 17:13:02.440" endtime="20210928 17:13:08.500"/>
+</test>
+<status status="PASS" starttime="20210928 17:12:41.369" endtime="20210928 17:13:08.502"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Ultimate">Ultimate</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
